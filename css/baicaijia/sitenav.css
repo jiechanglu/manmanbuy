@@ -1,0 +1,356 @@
+/*css 初始化 */
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0px;
+}
+a,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+html,
+img,
+input,
+label,
+legend,
+li,
+mark,
+ol,
+p,
+section,
+span,
+strong,
+textarea,
+time,
+ul,
+var {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body,
+html {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  /*在低版本的ie浏览器里面不支持*/
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  outline: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "微软雅黑";
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+  resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+  display: block;
+  border: 0;
+  vertical-align: middle;
+}
+/*合并外连线*/
+table {
+  /*表格的单元格边框默认是不会重合的，这个属性可以让表格的边框重合在一起，看起来更加细一些*/
+  border-collapse: collapse;
+}
+body {
+  color: #666;
+  background: #fff;
+}
+.clearfix {
+  *zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.al {
+  text-align: left;
+}
+.ac {
+  text-align: center;
+}
+.ar {
+  text-align: right;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.hide {
+  display: none;
+}
+.col-red {
+  color: #F10215 !important;
+}
+/*css初始化完成*/
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* 网页头部 */
+header {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .logo {
+  padding: 12px;
+  width: 75%;
+}
+header .logo a {
+  color: #5a5a5a;
+}
+header .logo a img {
+  max-height: 25px;
+  max-width: 186px;
+  overflow: hidden;
+}
+header .appdown {
+  padding: 7px;
+}
+header .appdown a img {
+  max-height: 34px;
+  max-width: 34px;
+  overflow: hidden;
+}
+/* 底部 */
+footer {
+  padding-top: 10px;
+  color: #5a5a5a;
+  background: #efefef;
+}
+footer .foot-top {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+  font-size: 0;
+}
+footer .foot-top a {
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  width: 33.333%;
+  border-right: 1px solid #c4c4c4;
+}
+footer .foot-top a img {
+  max-width: 15px;
+  max-height: 15px;
+}
+footer .footer {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 15px 0;
+}
+footer .footer div a:nth-child(1) {
+  color: red;
+}
+footer .footer div a {
+  display: inline;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../lib/fonts/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../lib/fonts/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../lib/fonts/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../lib/fonts/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../lib/fonts/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../lib/fonts/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  display: inline-block !important;
+}
+.backhead {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #ff841d;
+  text-align: center;
+  color: #fff;
+}
+.backhead h1 {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+.backhead .back {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  left: 0;
+  top: 15px;
+  font-size: 16px;
+}
+.backhead .back a {
+  color: white;
+}
+.backhead .download {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.backhead .download img {
+  margin: 0;
+  padding: 0;
+  display: inline-block !important;
+  width: 34px;
+  height: 34px;
+}
+.nav_list {
+  margin: 10px auto;
+  width: 300px;
+}
+.nav_list a {
+  font-size: 14px;
+  padding: 10px 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  float: left;
+  margin: 0 0 5px 5px;
+  color: #000;
+}
+.index_nav {
+  height: 36px;
+  line-height: 36px;
+  color: #000;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.index_nav a {
+  display: inline;
+}
+.footer {
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+.footer .col-xs-4 {
+  border: 1px solid #d5d5d5;
+  border-collapse: collapse;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.footer .col-xs-4 a {
+  color: #000;
+}
+.footer .col-xs-4 a img {
+  width: 15px;
+  margin-bottom: 3px;
+}
+.footer .bottom {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.footer .bottom a {
+  display: inline;
+  color: #f00;
+  margin-right: 5px;
+}
+.footer .bottom span {
+  color: #000;
+}
+.footer .bottom div {
+  padding-bottom: 15px;
+}

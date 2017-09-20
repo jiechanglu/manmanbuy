@@ -1,0 +1,461 @@
+@import '../lib/fonts/iconfont.css';
+/*css 初始化 */
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0px;
+}
+a,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+html,
+img,
+input,
+label,
+legend,
+li,
+mark,
+ol,
+p,
+section,
+span,
+strong,
+textarea,
+time,
+ul,
+var {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body,
+html {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  /*在低版本的ie浏览器里面不支持*/
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  outline: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "微软雅黑";
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+  resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+  display: block;
+  border: 0;
+  vertical-align: middle;
+}
+/*合并外连线*/
+table {
+  /*表格的单元格边框默认是不会重合的，这个属性可以让表格的边框重合在一起，看起来更加细一些*/
+  border-collapse: collapse;
+}
+body {
+  color: #666;
+  background: #fff;
+}
+.clearfix {
+  *zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.al {
+  text-align: left;
+}
+.ac {
+  text-align: center;
+}
+.ar {
+  text-align: right;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.hide {
+  display: none;
+}
+.col-red {
+  color: #F10215 !important;
+}
+/*css初始化完成*/
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* 网页头部 */
+header {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .logo {
+  padding: 12px;
+  width: 75%;
+}
+header .logo a {
+  overflow: hidden;
+  color: #5a5a5a;
+}
+header .logo a img {
+  max-height: 25px;
+  max-width: 186px;
+  overflow: hidden;
+}
+header .appdown {
+  padding: 7px;
+}
+header .appdown a {
+  overflow: hidden;
+}
+header .appdown a img {
+  max-height: 34px;
+  max-width: 34px;
+  overflow: hidden;
+}
+/* 底部 */
+footer {
+  padding-top: 10px;
+  color: #5a5a5a;
+  background: #efefef;
+}
+footer .foot-top {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+  font-size: 0;
+}
+footer .foot-top a {
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  width: 33.333%;
+  overflow: hidden;
+  border-right: 1px solid #c4c4c4;
+}
+footer .foot-top a img {
+  max-width: 15px;
+  max-height: 15px;
+}
+footer .footer {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 15px 0;
+}
+footer .footer div a:nth-child(1) {
+  color: red;
+}
+footer .footer div a {
+  display: inline;
+}
+.auto-loading {
+  display: none;
+}
+.auto-loading img {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+.head-top {
+  background: #ff841d;
+  position: relative;
+}
+.head-top .left {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  font-size: 22px;
+  color: #fff;
+  font-family: '黑体';
+  font-weight: bold;
+}
+.head-top .left a i {
+  font-size: 25px;
+}
+.head-top > h1 {
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.head-top .appdown {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.head-top .appdown a img {
+  width: 34px;
+  height: 34px;
+}
+header {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .logo {
+  padding: 12px;
+  width: 75%;
+  float: left;
+}
+header .logo a {
+  color: #5a5a5a;
+}
+header .logo a img {
+  max-height: 25px;
+  max-width: 186px;
+  overflow: hidden;
+}
+header .appdown {
+  padding: 7px;
+  float: right;
+}
+header .appdown a img {
+  max-height: 34px;
+  max-width: 34px;
+  overflow: hidden;
+}
+.search {
+  border-bottom: 1px solid #e6e6e6;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: White;
+}
+.search .search-txt input {
+  -webkit-appearance: none;
+  border: none;
+  background: #f1f1f1;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+  width: 90%;
+  padding-left: 5%;
+  font-size: 16px;
+  overflow: hidden;
+}
+.search .search-btn input {
+  -webkit-appearance: none;
+  width: 63px;
+  background: #ff841d;
+  color: #FFFFFF;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+.all {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 10px 0 10px 0;
+}
+.all ul > li {
+  float: left;
+  width: 25%;
+  height: 60px;
+  line-height: 60px;
+}
+.all ul > li > a {
+  font-size: 14px;
+  text-align: center;
+}
+.all ul > li .active {
+  color: #ed55a5;
+}
+.contain {
+  width: 100%;
+  height: 100%;
+}
+.contain ul > li {
+  width: 100%;
+  height: 130px;
+  padding: 10px 10px 10px 5px;
+  border-bottom: 1px solid #e7e764;
+}
+.contain ul > li .photo {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+  float: left;
+}
+.contain ul > li .photo > img {
+  max-width: 80px;
+  max-height: 80px;
+  vertical-align: middle;
+}
+.contain ul > li .constructor > a:nth-child(2) {
+  margin-top: 20px;
+  color: #ef0000;
+  font-size: 18px;
+}
+.contain ul > li .constructor > a:nth-child(2) > em {
+  font-size: 12px;
+}
+.contain ul > li .constructor > a:nth-child(3) {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.contain ul > li .constructor > a:nth-child(3) > span:nth-child(1) {
+  float: left;
+}
+.contain ul > li .constructor > a:nth-child(3) > span:nth-child(2) {
+  float: right;
+}
+.contain .running_small {
+  height: 100px;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+.contain .running_small ul {
+  padding-top: 25px;
+}
+.contain .running_small ul li {
+  width: 33.33%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+.contain .running_small ul li > a {
+  display: inline-block;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+}
+.contain .running_small ul li > a > span {
+  background-color: #dcdcdc;
+  border: 1px solid #cdcdcd;
+}
+.contain .running_small ul li > a > select {
+  width: 100px;
+  height: 30px;
+}
+.center {
+  padding: 30px 0 45px 0;
+  height: 40px;
+  background-color: #cccccc;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #cccccc;
+}
+.center a:nth-child(1) {
+  float: left;
+  margin-left: 10px;
+}
+.center a:nth-child(2) {
+  float: left;
+}
+.center a:nth-child(3) {
+  float: left;
+}
+.position > a {
+  position: fixed;
+  bottom: 20px;
+  right: 1px;
+  width: 60px;
+}

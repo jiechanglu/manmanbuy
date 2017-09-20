@@ -1,0 +1,222 @@
+@import "./base.less";
+// 头部
+header {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .logo {
+  padding: 12px;
+  width: 75%;
+  float: left;
+}
+header .logo a {
+  color: #5a5a5a;
+}
+header .logo a img {
+  max-height: 25px;
+  max-width: 186px;
+  overflow: hidden;
+}
+header .appdown {
+  padding: 7px;
+  float: right;
+}
+header .appdown a img {
+  max-height: 34px;
+  max-width: 34px;
+  overflow: hidden;
+}
+
+
+
+.search {
+  border-bottom: 1px solid #e6e6e6;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: White;
+}
+
+.search .search-txt input {
+  -webkit-appearance: none;
+  border: none;
+  background: #f1f1f1;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+  width: 90%;
+  padding-left: 5%;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.search .search-btn input {
+  -webkit-appearance: none;
+  width: 63px;
+  background: #ff841d;
+  color: #FFFFFF;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+
+
+
+
+// 主体的渲染的
+.all{
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin:10px 0 10px 0;
+  ul{
+    > li{
+      float: left;
+      width: 25%;
+      height: 60px;
+      line-height: 60px;  
+      >a{
+        font-size: 14px;
+        text-align: center;
+      }
+      .active{
+        color:#ed55a5;
+      }
+    }
+  }
+}
+
+
+
+// 主体下面的内容
+.contain{
+       width:100%;
+       height: 100%;
+      //  padding:10px 10px 10px 5px;
+    ul{
+        > li{
+            width: 100%;
+            height: 130px;
+            padding:10px 10px 10px 5px;
+            border-bottom: 1px solid rgb(231, 231, 100);
+                .photo{
+                     width: 100px;
+                     height: 80px;
+                     overflow: hidden;
+                     margin-right: 10px;
+                     float: left;
+                     >img{
+                         max-width:80px;
+                         max-height:80px;
+                         vertical-align: middle;
+                     }
+            }
+            .constructor{
+              >a:nth-child(2){
+                  margin-top: 20px;
+                  color:#ef0000;
+                  font-size: 18px;
+                  >em{
+                    font-size: 12px;
+                  }
+              }
+              >a:nth-child(3){
+                font-size: 12px;
+                color: #a1a1a1;
+                >span:nth-child(1){
+                   float: left;
+                }
+                >span:nth-child(2){
+                  float: right;
+                }
+              }
+            }
+        }
+    }
+    // 小部分
+.running_small{
+       height: 100px;
+       width: 100%;
+       background-color: rgb(220, 220, 220);
+       ul{
+         padding-top: 25px;
+         li{
+           width: 33.33%;
+           height: 40px;
+           line-height: 40px;
+           float: left;
+           >a{
+             display: inline-block;
+             background-color: #d4d4d4;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+            >span{
+              // font-size:16px;
+              // border-radius: 5px;
+              //  margin-left: 80px;
+               background-color: rgb(220, 220, 220);
+               border: 1px solid rgb(205, 205, 205);
+            }
+            > select{
+              width: 100px;
+              height: 30px;
+              //  margin-left: 80px;
+            }
+           }
+         }
+       }
+}
+
+}
+
+
+// 主体204, 204, 204
+.center{
+  padding:30px 0 45px 0;
+  height: 40px;
+  background-color: rgb(204, 204, 204);
+  border-top:1px solid rgb(235, 235, 235);
+  border-bottom:1px solid rgb(204, 204, 204);
+  a:nth-child(1){
+    float:left;
+    margin-left: 10px;
+  }
+  a:nth-child(2){
+    float: left;
+  }
+  a:nth-child(3){
+    float: left;
+  }
+}
+// 定位
+.position{
+    >a{
+        position: fixed;
+        bottom: 20px;
+        right:1px;
+        width:60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
